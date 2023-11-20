@@ -1,0 +1,129 @@
+:root{
+    --fg1: #00000;
+    --fg2: #75507b;
+    --hg: #e9897c;
+    --bg1: #FFFFFF;
+    --bg2: #edb4e7;
+}
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+</style>
+
+body{
+    background-color: var(--bg1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Code Pro', cursive;
+    color: var(--fg1);
+    font-size: 48px;
+}
+
+div.content{
+    background-color: var(--bg2);
+    min-height: 98vh;
+    width: 89vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10vh;
+}
+
+input[type=submit]{
+    font-family: 'Source Code Pro', cursive;
+    background-color: var(--fg1);
+    color: var(--bg2);
+    text-align: center;
+    padding: 2vh;
+    margin: 1vh;
+    width: 100%;
+    border: solid 0.5vh var(--fg1);
+    border-radius: 1vh;
+    font-size: 32px;
+}
+
+input[type=submit]:hover{
+    background-color: var(--fg1);
+    color: var(--bg2);
+    border: solid 0.5vh var(--hg);
+}
+
+input[type=text]{
+    font-family: 'Source Code Pro', cursive;
+    background-color: var(--fg2);
+    color: var(--fg1);
+    text-align: center;
+    padding: 1vh;
+    margin: 1vh;
+    width: 100%;
+    border: none;
+    border-radius: 1vh;
+    font-size: 32px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10vh;
+}
+
+p{
+    font-size: 32px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+a{
+    font-family: 'Source Code Pro', cursive;
+    background-color: var(--fg2);
+    color: var(--fg1);
+    text-align: center;
+    padding: 1vh;
+    margin: 1vh;
+    width: 100%;
+    border: solid 0.5vh var(--fg1);
+    border-radius: 1vh;
+    font-size: large;
+    display: inline-block;
+    max-width: 25%;
+    margin: 3vh;
+    text-align: center;
+}
+
+a:hover{
+    background-color: var(--fg1);
+    color: var(--bg2);
+    border: solid 0.5vh var(--hg);
+}
+
+table{
+    width: 100%;
+    height: 60%;
+    table-layout: fixed ;
+}
+
+tr{
+    min-height: 25%;
+}
+
+td{
+    min-width: 25%;
+    text-align: center;
+    color: #00000000;
+}
+
+td > a{
+    margin: 0%;
+    padding: 0.3vh;
+}
+
+td > a:hover{
+    margin: 0%;
+    padding: 0.3vh;
+}

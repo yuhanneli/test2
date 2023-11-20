@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            <!-- lamest christmas gift -->
+            iloveyou
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="content">
+            
+            <h1 id="bunnyheading">
+                <!-- Edit this -->
+                CONGRATULATIONS BABY!!! You solved the puzzle:333 Goodjob👍🏻
+            </h1>
+            <form action="javascript:validate();">
+                <label for="fbunny" id="bunnylabel">
+                    <!-- Edit this -->
+                    Anyways, Merry Christmas, Baby. This is our first Christmas ever so I wanted to give you something memorable. Please, Put the name you always call me. You favorite one. HINT: IT'S AN ANIMAL
+                    
+                </label><br>
+                <input type="text" id="fbunny" name="fbunny" value=""><br>
+                <!-- Edit the stuff in value="..." -->
+                <input type="submit" value="Hehehehe">
+            </form>
+        
+        </div>
+
+        <script>
+            function validate(){
+                var s = document.getElementById("fbunny").value;
+                if( s == "bun" || s == "bunny" |s == "Bunny"| s == "Bun")  {
+                    console.log(s);
+                    window.location.href = "page-2.html";
+                }
+            }
+            
+        </script>
+    </body>
+
+</html> 
