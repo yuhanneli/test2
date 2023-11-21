@@ -1,5 +1,5 @@
 :root{
-    --fg1: #00000;
+    --fg1: #000000;
     --fg2: #75507b;
     --hg: #e9897c;
     --bg1: #FFFFFF;
@@ -7,32 +7,35 @@
 }
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
 </style>
+<
 
 body{
+    height: 100vh;
+    width: 100vw;
     background-color: var(--bg1);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Source Code Pro', cursive;
+    font-family:"Times New Roman", none;
     color: var(--fg1);
-    font-size: 48px;
+    font-size: 16px;
 }
 
 div.content{
     background-color: var(--bg2);
     min-height: 98vh;
-    width: 89vw;
+    width: 64vm;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10vh;
+    border-radius: 16vh;
 }
 
 input[type=submit]{
-    font-family: 'Source Code Pro', cursive;
+    font-family: 'Gideon Roman', none;
     background-color: var(--fg1);
     color: var(--bg2);
     text-align: center;
@@ -51,7 +54,7 @@ input[type=submit]:hover{
 }
 
 input[type=text]{
-    font-family: 'Source Code Pro', cursive;
+    font-family: 'Gideon Roman', none;
     background-color: var(--fg2);
     color: var(--fg1);
     text-align: center;
@@ -72,15 +75,15 @@ form{
 }
 
 p{
-    font-size: 32px;
+    font-size: 28px;
 }
 
 h1{
-    font-size: 48px;
+    font-size: 40px;
 }
 
 a{
-    font-family: 'Source Code Pro', cursive;
+    font-family: 'Gideon Roman', none;
     background-color: var(--fg2);
     color: var(--fg1);
     text-align: center;

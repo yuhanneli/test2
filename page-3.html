@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            <!-- Edit this -->
+            Page Title
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="content">
+            <h1>
+                <!-- Edit this -->
+                some heading
+            </h1>
+            <table id="buttontable">
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td><a id="yesbutton" onclick="javascript:nextpage()">YES</a></td>
+                    <td><a id="nobutton" onclick="javascript:relocate();">NO</a></td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                </tr>
+            </table>
+                
+                
+        </div>
+
+        <script>
+            function relocate(){
+                document.getElementById("buttontable").innerHTML = "";
+                var x = 1; 
+                var y = 1;
+                while(x==1 && y ==1){
+                    x = Math.floor(Math.random() * 4);
+                    y = Math.floor(Math.random() * 4);
+                }
+
+                var s = "";
+                for(i = 0; i < 4; i++){
+                    s += "<tr>";
+                    for(j = 0; j < 4;j++){
+                        s+="<td>";
+                            if(i == 1 && j == 1){
+                                s+= "<a id=\"yesbutton\" onclick=\"javascript:nextpage()\">YES</a>"
+                            }
+                            else if(i == x && j == y){
+                                s+= "<a id=\"nobutton\" onclick=\"javascript:relocate()\">NO</a>"
+                            } else {
+                                s+="A";
+                            }
+                        s+="</td>"
+                    }
+                    s += "<tr>";
+                }
+
+                document.getElementById("buttontable").innerHTML = s;
+            }
+
+            function nextpage(){
+                window.location.href = "page-4.html";
+            }
+        </script>
+
+
+    </body>
+
+</html> 
